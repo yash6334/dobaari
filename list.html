@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfits Table</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            font-size: 14px;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Variation 1</h1>
+    
+    <h2>Men Outfits</h2>
+    <table id="menTable1">
+        <thead>
+            <tr>
+                <th>Look Number</th>
+                <th>Bottomwear</th>
+                <th>1st Layer</th>
+                <th>Sleeveless Blazer</th>
+                <th>Reasoning</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+    <h2>Women Outfits</h2>
+    <table id="womenTable1">
+        <thead>
+            <tr>
+                <th>Look Number</th>
+                <th>Bottomwear</th>
+                <th>1st Layer</th>
+                <th>Sleeveless Blazer</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+    <h1>Variation 2</h1>
+    <h2>Women Outfits</h2>
+    <table id="womenTable2">
+        <thead>
+            <tr>
+                <th>Look Number</th>
+                <th>Bottomwear</th>
+                <th>1st Layer</th>
+                <th>Sleeveless Blazer</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+    <h1>Variation 3</h1>
+    <h2>Women Outfits</h2>
+    <table id="womenTable3">
+        <thead>
+            <tr>
+                <th>Look Number</th>
+                <th>Bottomwear</th>
+                <th>1st Layer</th>
+                <th>Sleeveless Blazer</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+    <h1>Variation 4</h1>
+    <h2>Women Outfits</h2>
+    <table id="womenTable4">
+        <thead>
+            <tr>
+                <th>Look Number</th>
+                <th>Bottomwear</th>
+                <th>1st Layer</th>
+                <th>Sleeveless Blazer</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+    <h1>Variation 5</h1>
+    <h2>Women Outfits</h2>
+    <table id="womenTable5">
+        <thead>
+            <tr>
+                <th>Look Number</th>
+                <th>Bottomwear</th>
+                <th>1st Layer</th>
+                <th>Sleeveless Blazer</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        // Assuming your data is stored in the variable 'outfitsData'
+        outfitsData1 = {
+            "women_outfits": [
+            {
+                "look_number": 1,
+                "bottomwear": "Dark Pink Loose Pants",
+                "1st_layer": "Yellow Blouse",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A vibrant mix of colors with the dark pink pants providing a bold contrast to the yellow blouse, complemented by the pink blazer for a chic look."
+            },
+            {
+                "look_number": 2,
+                "bottomwear": "Green Fitted Pants",
+                "1st_layer": "Dark Green Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "An earthy combination with the green pants and dark green blouse, elevated by the refreshing sky blue blazer for a modern and sophisticated ensemble."
+            },
+            {
+                "look_number": 3,
+                "bottomwear": "Beige Fitted Pants",
+                "1st_layer": "Beige Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A monochromatic elegance with beige pants and blouse, accented by the dark green blazer, creating a polished and versatile outfit."
+            },
+            {
+                "look_number": 4,
+                "bottomwear": "Yellow Fitted Pants",
+                "1st_layer": "Dark Pink Blouse",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A playful combination featuring yellow pants and blouse, enhanced by the vibrant dark pink blazer, achieving a lively and energetic look."
+            },
+            {
+                "look_number": 5,
+                "bottomwear": "Beige Skirt",
+                "1st_layer": "Pink Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A fusion of femininity and sophistication, pairing a beige skirt with a pink blouse, topped off by a dark green blazer for an eclectic style."
+            },
+            {
+                "look_number": 6,
+                "bottomwear": "Beige Fitted Pants",
+                "1st_layer": "Yellow Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A harmonious blend of neutral tones, combining beige pants and a yellow blouse, complemented by a sky blue blazer for a refreshing and balanced look."
+            },
+            {
+                "look_number": 7,
+                "bottomwear": "Green Fitted Pants",
+                "1st_layer": "Dark Pink Blouse",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "An energetic and vibrant ensemble featuring green pants and a dark pink blouse, accentuated by the lively yellow blazer for a standout appearance."
+            },
+            {
+                "look_number": 8,
+                "bottomwear": "Dark Pink Loose Pants",
+                "1st_layer": "Dark Green Blouse",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A rich and sophisticated combination with dark pink pants and a dark green blouse, complemented by the playful pink blazer for a stylish and confident look."
+            },
+            {
+                "look_number": 9,
+                "bottomwear": "Yellow Fitted Pants",
+                "1st_layer": "Pink Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A lively and feminine ensemble featuring yellow pants and a pink blouse, elevated by the dark green blazer for a touch of sophistication."
+            },
+            {
+                "look_number": 10,
+                "bottomwear": "Beige Skirt",
+                "1st_layer": "Dark Green Blouse",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A versatile and elegant combination with a beige skirt and dark green blouse, enhanced by the pop of color from the yellow blazer for a modern and polished look."
+            },
+            {
+                "look_number": 11,
+                "bottomwear": "Dark Pink Loose Pants",
+                "1st_layer": "Pink Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A playful and feminine ensemble featuring dark pink pants and a pink blouse, complemented by the refreshing sky blue blazer for a chic and trendy look."
+            },
+            {
+                "look_number": 12,
+                "bottomwear": "Green Fitted Pants",
+                "1st_layer": "Yellow Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "An earthy and vibrant combination with green pants and a yellow blouse, complemented by the dark green blazer for a stylish and contemporary appearance."
+            },
+            {
+                "look_number": 13,
+                "bottomwear": "Beige Fitted Pants",
+                "1st_layer": "Dark Pink Blouse",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A balanced mix of neutrals and bold colors, pairing beige pants and a dark pink blouse, accentuated by the yellow blazer for a standout and confident look."
+            }
+            ],
+            "men_outfits": [
+            {
+                "look_number": 1,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A monochromatic base with a pop of color, the beige pants and shirt providing a neutral canvas, while the pink blazer adds a bold and stylish touch."
+            },
+            {
+                "look_number": 2,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A classic and cool ensemble featuring beige pants and shirt, elevated by the sky blue blazer for a touch of modern sophistication."
+            },
+            {
+                "look_number": 3,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "An earthy and timeless combination with beige pants and shirt, complemented by the dark green blazer for a refined and versatile look."
+            },
+            {
+                "look_number": 4,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A sunny and vibrant outfit featuring beige pants and shirt, accentuated by the cheerful yellow blazer, perfect for a contemporary style statement."
+            },
+            {
+                "look_number": 5,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Beige Tuxedo",
+                "reasoning": "A sleek and sophisticated monochromatic look, pairing beige pants and shirt, completed by the beige tuxedo for a polished and cohesive appearance."
+            },
+            {
+                "look_number": 6,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A versatile and stylish combination with beige pants and shirt, enhanced by the dark green blazer for a contemporary and refined appearance."
+            },
+            {
+                "look_number": 7,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A playful and vibrant ensemble featuring beige pants and shirt, elevated by the lively yellow blazer for a confident and modern look."
+            },
+            {
+                "look_number": 8,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A balanced mix of neutrals and a pop of color, the beige pants and shirt complemented by the playful pink blazer for a stylish and contemporary appearance."
+            },
+            {
+                "look_number": 9,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A classic and refined combination with beige pants and shirt, elevated by the cool and modern touch of the sky blue blazer for a timeless look."
+            }
+            ]
+        }
+        
+        outfitsData2 = {
+            "women_outfits": [
+            {
+                "look_number": 1,
+                "bottomwear": "Dark Pink Loose Pants",
+                "1st_layer": "Yellow Blouse",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A vibrant mix of colors with the dark pink pants providing a bold contrast to the yellow blouse, complemented by the pink blazer for a chic look."
+            },
+            {
+                "look_number": 2,
+                "bottomwear": "Beige Fitted Pants",
+                "1st_layer": "Dark Green Blouse",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A sophisticated combination with beige pants and a dark green blouse, enhanced by the vibrant yellow blazer for a modern and stylish appearance."
+            },
+            {
+                "look_number": 3,
+                "bottomwear": "Green Fitted Pants",
+                "1st_layer": "Beige Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A fresh and elegant ensemble featuring green pants and a beige blouse, elevated by the sky blue blazer for a contemporary and refined look."
+            },
+            {
+                "look_number": 4,
+                "bottomwear": "Yellow Fitted Pants",
+                "1st_layer": "Dark Pink Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A playful and balanced combination with yellow pants and a dark pink blouse, complemented by the earthy dark green blazer for a lively and confident look."
+            },
+            {
+                "look_number": 5,
+                "bottomwear": "Beige Skirt",
+                "1st_layer": "Pink Blouse",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A fusion of femininity and vibrancy, pairing a beige skirt with a pink blouse, topped off by the lively yellow blazer for an eclectic and chic style."
+            },
+            {
+                "look_number": 6,
+                "bottomwear": "Dark Pink Loose Pants",
+                "1st_layer": "Yellow Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A harmonious blend of warm tones, featuring dark pink pants and a yellow blouse, complemented by the earthy dark green blazer for a cohesive and stylish appearance."
+            },
+            {
+                "look_number": 7,
+                "bottomwear": "Beige Fitted Pants",
+                "1st_layer": "Dark Pink Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A playful and feminine combination with beige pants and a dark pink blouse, enhanced by the refreshing sky blue blazer for a trendy and confident look."
+            },
+            {
+                "look_number": 8,
+                "bottomwear": "Green Fitted Pants",
+                "1st_layer": "Pink Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A bold and vibrant ensemble featuring green pants and a pink blouse, complemented by the earthy dark green blazer for a standout and modern appearance."
+            },
+            {
+                "look_number": 9,
+                "bottomwear": "Dark Pink Loose Pants",
+                "1st_layer": "Dark Green Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A rich and sophisticated combination with dark pink pants and a dark green blouse, elevated by the refreshing sky blue blazer for a chic and confident look."
+            },
+            {
+                "look_number": 10,
+                "bottomwear": "Yellow Fitted Pants",
+                "1st_layer": "Pink Blouse",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A lively and feminine ensemble featuring yellow pants and a pink blouse, accentuated by the cheerful yellow blazer for a playful and stylish appearance."
+            },
+            {
+                "look_number": 11,
+                "bottomwear": "Beige Skirt",
+                "1st_layer": "Dark Green Blouse",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A versatile and elegant combination with a beige skirt and dark green blouse, enhanced by the playful pink blazer for a modern and polished look."
+            },
+            {
+                "look_number": 12,
+                "bottomwear": "Dark Pink Loose Pants",
+                "1st_layer": "Pink Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A playful and feminine ensemble featuring dark pink pants and a pink blouse, complemented by the earthy dark green blazer for a chic and trendy look."
+            },
+            {
+                "look_number": 13,
+                "bottomwear": "Green Fitted Pants",
+                "1st_layer": "Yellow Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "An energetic and vibrant combination with green pants and a yellow blouse, complemented by the refreshing sky blue blazer for a stylish and contemporary appearance."
+            }
+            ],
+            "men_outfits": [
+            {
+                "look_number": 1,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A monochromatic base with a pop of color, the beige pants and shirt providing a neutral canvas, while the pink blazer adds a bold and stylish touch."
+            },
+            {
+                "look_number": 2,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A classic and cool ensemble featuring beige pants and shirt, elevated by the sky blue blazer for a touch of modern sophistication."
+            },
+            {
+                "look_number": 3,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "An earthy and timeless combination with beige pants and shirt, complemented by the dark green blazer for a refined and versatile look."
+            },
+            {
+                "look_number": 4,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A sunny and vibrant outfit featuring beige pants and shirt, accentuated by the cheerful yellow blazer, perfect for a contemporary style statement."
+            },
+            {
+                "look_number": 5,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Beige Tuxedo",
+                "reasoning": "A sleek and sophisticated monochromatic look, pairing beige pants and shirt, completed by the beige tuxedo for a polished and cohesive appearance."
+            },
+            {
+                "look_number": 6,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A versatile and stylish combination with beige pants and shirt, enhanced by the dark green blazer for a contemporary and refined appearance."
+            },
+            {
+                "look_number": 7,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A playful and vibrant ensemble featuring beige pants and shirt, elevated by the lively yellow blazer for a confident and modern look."
+            },
+            {
+                "look_number": 8,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A balanced mix of neutrals and a pop of color, the beige pants and shirt complemented by the playful pink blazer for a stylish and contemporary appearance."
+            },
+            {
+                "look_number": 9,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A classic and refined combination with beige pants and shirt, elevated by the cool and modern touch of the sky blue blazer for a timeless look."
+            }
+            ]
+        }
+        
+        outfitsData3 = {
+            "women_outfits": [
+            {
+                "look_number": 1,
+                "bottomwear": "Green Fitted Pants",
+                "1st_layer": "Yellow Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A harmonious combination with green pants and a yellow blouse, enhanced by the earthy dark green blazer for a chic and sophisticated look."
+            },
+            {
+                "look_number": 2,
+                "bottomwear": "Beige Skirt",
+                "1st_layer": "Dark Pink Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "An eclectic mix of elements with a beige skirt, a dark pink blouse, and a refreshing sky blue blazer for a trendy and playful ensemble."
+            },
+            {
+                "look_number": 3,
+                "bottomwear": "Dark Pink Loose Pants",
+                "1st_layer": "Dark Green Blouse",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A bold and vibrant combination with dark pink pants and a dark green blouse, complemented by the lively yellow blazer for a confident and stylish appearance."
+            },
+            {
+                "look_number": 4,
+                "bottomwear": "Beige Fitted Pants",
+                "1st_layer": "Yellow Blouse",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A chic and lively ensemble with beige pants and a yellow blouse, accentuated by the playful pink blazer for a modern and confident look."
+            },
+            {
+                "look_number": 5,
+                "bottomwear": "Yellow Fitted Pants",
+                "1st_layer": "Pink Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A playful and vibrant combination featuring yellow pants and a pink blouse, complemented by the earthy dark green blazer for a standout appearance."
+            },
+            {
+                "look_number": 6,
+                "bottomwear": "Dark Pink Loose Pants",
+                "1st_layer": "Beige Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A sophisticated and versatile combination with dark pink pants, a beige blouse, and a refreshing sky blue blazer for a modern and polished look."
+            },
+            {
+                "look_number": 7,
+                "bottomwear": "Beige Fitted Pants",
+                "1st_layer": "Pink Blouse",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A balanced mix of neutrals and bold colors, pairing beige pants and a pink blouse, accentuated by the lively yellow blazer for a standout and confident look."
+            },
+            {
+                "look_number": 8,
+                "bottomwear": "Green Fitted Pants",
+                "1st_layer": "Dark Green Blouse",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A rich and sophisticated combination with green pants and a dark green blouse, complemented by the playful pink blazer for a stylish and confident look."
+            },
+            {
+                "look_number": 9,
+                "bottomwear": "Dark Pink Loose Pants",
+                "1st_layer": "Yellow Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A vibrant and refreshing ensemble featuring dark pink pants and a yellow blouse, elevated by the sky blue blazer for a chic and trendy look."
+            },
+            {
+                "look_number": 10,
+                "bottomwear": "Beige Skirt",
+                "1st_layer": "Pink Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A fusion of femininity and sophistication, pairing a beige skirt with a pink blouse, topped off by a dark green blazer for an eclectic style."
+            },
+            {
+                "look_number": 11,
+                "bottomwear": "Yellow Fitted Pants",
+                "1st_layer": "Dark Pink Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A playful and balanced combination with yellow pants and a dark pink blouse, complemented by the earthy dark green blazer for a lively and confident look."
+            },
+            {
+                "look_number": 12,
+                "bottomwear": "Beige Fitted Pants",
+                "1st_layer": "Dark Green Blouse",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "An earthy and vibrant ensemble with beige pants and a dark green blouse, elevated by the lively yellow blazer for a stylish and contemporary appearance."
+            },
+            {
+                "look_number": 13,
+                "bottomwear": "Green Fitted Pants",
+                "1st_layer": "Pink Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A bold and dynamic combination with green pants and a pink blouse, complemented by the earthy dark green blazer for a standout and modern appearance."
+            }
+            ],
+            "men_outfits": [
+            {
+                "look_number": 1,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A monochromatic base with a pop of color, the beige pants and shirt providing a neutral canvas, while the pink blazer adds a bold and stylish touch."
+            },
+            {
+                "look_number": 2,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A classic and cool ensemble featuring beige pants and shirt, elevated by the sky blue blazer for a touch of modern sophistication."
+            },
+            {
+                "look_number": 3,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "An earthy and timeless combination with beige pants and shirt, complemented by the dark green blazer for a refined and versatile look."
+            },
+            {
+                "look_number": 4,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A sunny and vibrant outfit featuring beige pants and shirt, accentuated by the cheerful yellow blazer, perfect for a contemporary style statement."
+            },
+            {
+                "look_number": 5,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Beige Tuxedo",
+                "reasoning": "A sleek and sophisticated monochromatic look, pairing beige pants and shirt, completed by the beige tuxedo for a polished and cohesive appearance."
+            },
+            {
+                "look_number": 6,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A versatile and stylish combination with beige pants and shirt, enhanced by the dark green blazer for a contemporary and refined appearance."
+            },
+            {
+                "look_number": 7,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A playful and vibrant ensemble featuring beige pants and shirt, elevated by the lively yellow blazer for a confident and modern look."
+            },
+            {
+                "look_number": 8,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A balanced mix of neutrals and a pop of color, the beige pants and shirt complemented by the playful pink blazer for a stylish and contemporary appearance."
+            },
+            {
+                "look_number": 9,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A classic and refined combination with beige pants and shirt, elevated by the cool and modern touch of the sky blue blazer for a timeless look."
+            }
+            ]
+        }
+        
+        outfitsData4 = {
+            "women_outfits": [
+            {
+                "look_number": 1,
+                "bottomwear": "Yellow Fitted Pants",
+                "1st_layer": "Dark Green Blouse",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A playful and vibrant combination with yellow pants and a dark green blouse, complemented by the pink blazer for a standout and confident look."
+            },
+            {
+                "look_number": 2,
+                "bottomwear": "Dark Pink Loose Pants",
+                "1st_layer": "Yellow Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "An energetic and harmonious ensemble featuring dark pink pants and a yellow blouse, elevated by the earthy dark green blazer for a stylish and contemporary appearance."
+            },
+            {
+                "look_number": 3,
+                "bottomwear": "Beige Fitted Pants",
+                "1st_layer": "Pink Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A chic and sophisticated combination with beige pants and a pink blouse, enhanced by the refreshing sky blue blazer for a modern and polished look."
+            },
+            {
+                "look_number": 4,
+                "bottomwear": "Green Fitted Pants",
+                "1st_layer": "Dark Pink Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A rich and dynamic combination with green pants and a dark pink blouse, complemented by the earthy dark green blazer for a stylish and confident look."
+            },
+            {
+                "look_number": 5,
+                "bottomwear": "Beige Skirt",
+                "1st_layer": "Yellow Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A fusion of femininity and vibrancy, pairing a beige skirt with a yellow blouse, topped off by the refreshing sky blue blazer for an eclectic and chic style."
+            },
+            {
+                "look_number": 6,
+                "bottomwear": "Dark Pink Loose Pants",
+                "1st_layer": "Dark Green Blouse",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A bold and vibrant combination with dark pink pants and a dark green blouse, complemented by the lively yellow blazer for a confident and stylish appearance."
+            },
+            {
+                "look_number": 7,
+                "bottomwear": "Green Fitted Pants",
+                "1st_layer": "Beige Blouse",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A harmonious and versatile ensemble featuring green pants and a beige blouse, complemented by the playful pink blazer for a modern and polished look."
+            },
+            {
+                "look_number": 8,
+                "bottomwear": "Beige Fitted Pants",
+                "1st_layer": "Dark Pink Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "An earthy and sophisticated combination with beige pants and a dark pink blouse, enhanced by the earthy dark green blazer for a refined and stylish appearance."
+            },
+            {
+                "look_number": 9,
+                "bottomwear": "Yellow Fitted Pants",
+                "1st_layer": "Dark Green Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "An energetic and vibrant combination with yellow pants and a dark green blouse, elevated by the refreshing sky blue blazer for a stylish and contemporary appearance."
+            },
+            {
+                "look_number": 10,
+                "bottomwear": "Beige Skirt",
+                "1st_layer": "Dark Pink Blouse",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A versatile and elegant combination with a beige skirt, dark pink blouse, and playful pink blazer, creating a modern and polished look."
+            },
+            {
+                "look_number": 11,
+                "bottomwear": "Dark Pink Loose Pants",
+                "1st_layer": "Beige Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A sophisticated and balanced ensemble featuring dark pink pants and a beige blouse, complemented by the earthy dark green blazer for a chic and confident look."
+            },
+            {
+                "look_number": 12,
+                "bottomwear": "Green Fitted Pants",
+                "1st_layer": "Yellow Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "An earthy and vibrant combination with green pants and a yellow blouse, complemented by the refreshing sky blue blazer for a stylish and contemporary appearance."
+            },
+            {
+                "look_number": 13,
+                "bottomwear": "Beige Fitted Pants",
+                "1st_layer": "Dark Pink Blouse",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A balanced mix of neutrals and bold colors, pairing beige pants and a dark pink blouse, accentuated by the lively yellow blazer for a standout and confident look."
+            }
+            ],
+            "men_outfits": [
+            {
+                "look_number": 1,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A monochromatic base with a pop of color, the beige pants and shirt providing a neutral canvas, while the pink blazer adds a bold and stylish touch."
+            },
+            {
+                "look_number": 2,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A classic and cool ensemble featuring beige pants and shirt, elevated by the sky blue blazer for a touch of modern sophistication."
+            },
+            {
+                "look_number": 3,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "An earthy and timeless combination with beige pants and shirt, complemented by the dark green blazer for a refined and versatile look."
+            },
+            {
+                "look_number": 4,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A sunny and vibrant outfit featuring beige pants and shirt, accentuated by the cheerful yellow blazer, perfect for a contemporary style statement."
+            },
+            {
+                "look_number": 5,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Beige Tuxedo",
+                "reasoning": "A sleek and sophisticated monochromatic look, pairing beige pants and shirt, completed by the beige tuxedo for a polished and cohesive appearance."
+            },
+            {
+                "look_number": 6,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A versatile and stylish combination with beige pants and shirt, enhanced by the dark green blazer for a contemporary and refined appearance."
+            },
+            {
+                "look_number": 7,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A playful and vibrant ensemble featuring beige pants and shirt, elevated by the lively yellow blazer for a confident and modern look."
+            },
+            {
+                "look_number": 8,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A balanced mix of neutrals and a pop of color, the beige pants and shirt complemented by the playful pink blazer for a stylish and contemporary appearance."
+            },
+            {
+                "look_number": 9,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A classic and refined combination with beige pants and shirt, elevated by the cool and modern touch of the sky blue blazer for a timeless look."
+            }
+            ]
+        }
+        
+        outfitsData5 = {
+            "women_outfits": [
+            {
+                "look_number": 1,
+                "bottomwear": "Beige Skirt",
+                "1st_layer": "Dark Green Blouse",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "An elegant and vibrant ensemble featuring a beige skirt, a dark green blouse, and a lively yellow blazer for a sophisticated and modern look."
+            },
+            {
+                "look_number": 2,
+                "bottomwear": "Dark Pink Loose Pants",
+                "1st_layer": "Yellow Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A playful and refreshing combination with dark pink pants, a yellow blouse, and a sky blue blazer for a trendy and lively appearance."
+            },
+            {
+                "look_number": 3,
+                "bottomwear": "Green Fitted Pants",
+                "1st_layer": "Beige Blouse",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A versatile and chic ensemble featuring green pants, a beige blouse, and a playful pink blazer for a modern and stylish look."
+            },
+            {
+                "look_number": 4,
+                "bottomwear": "Yellow Fitted Pants",
+                "1st_layer": "Dark Green Blouse",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A dynamic and vibrant combination with yellow pants, a dark green blouse, and a playful pink blazer for a confident and standout appearance."
+            },
+            {
+                "look_number": 5,
+                "bottomwear": "Beige Skirt",
+                "1st_layer": "Dark Pink Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A fusion of femininity and playfulness, pairing a beige skirt with a dark pink blouse, topped off by the refreshing sky blue blazer for a chic and eclectic style."
+            },
+            {
+                "look_number": 6,
+                "bottomwear": "Dark Pink Loose Pants",
+                "1st_layer": "Dark Green Blouse",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A balanced and harmonious combination with dark pink pants, a dark green blouse, and a lively yellow blazer for a cohesive and stylish appearance."
+            },
+            {
+                "look_number": 7,
+                "bottomwear": "Beige Fitted Pants",
+                "1st_layer": "Pink Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A sophisticated and trendy ensemble featuring beige pants, a pink blouse, and a refreshing sky blue blazer for a modern and polished look."
+            },
+            {
+                "look_number": 8,
+                "bottomwear": "Green Fitted Pants",
+                "1st_layer": "Yellow Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A bold and vibrant combination with green pants, a yellow blouse, and a earthy dark green blazer for a confident and stylish look."
+            },
+            {
+                "look_number": 9,
+                "bottomwear": "Dark Pink Loose Pants",
+                "1st_layer": "Beige Blouse",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "An eclectic and playful ensemble featuring dark pink pants, a beige blouse, and a playful pink blazer for a trendy and chic appearance."
+            },
+            {
+                "look_number": 10,
+                "bottomwear": "Yellow Fitted Pants",
+                "1st_layer": "Dark Green Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "An energetic and vibrant combination with yellow pants, a dark green blouse, and a refreshing sky blue blazer for a stylish and contemporary appearance."
+            },
+            {
+                "look_number": 11,
+                "bottomwear": "Beige Skirt",
+                "1st_layer": "Pink Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A fusion of femininity and sophistication, pairing a beige skirt with a pink blouse, topped off by a dark green blazer for an eclectic and modern style."
+            },
+            {
+                "look_number": 12,
+                "bottomwear": "Dark Pink Loose Pants",
+                "1st_layer": "Pink Blouse",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A playful and feminine ensemble featuring dark pink pants, a pink blouse, and a earthy dark green blazer for a chic and trendy look."
+            },
+            {
+                "look_number": 13,
+                "bottomwear": "Green Fitted Pants",
+                "1st_layer": "Dark Green Blouse",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A rich and sophisticated combination with green pants, a dark green blouse, and a refreshing sky blue blazer for a chic and confident look."
+            }
+            ],
+            "men_outfits": [
+            {
+                "look_number": 1,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A monochromatic base with a pop of color, the beige pants and shirt providing a neutral canvas, while the pink blazer adds a bold and stylish touch."
+            },
+            {
+                "look_number": 2,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A classic and cool ensemble featuring beige pants and shirt, elevated by the sky blue blazer for a touch of modern sophistication."
+            },
+            {
+                "look_number": 3,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "An earthy and timeless combination with beige pants and shirt, complemented by the dark green blazer for a refined and versatile look."
+            },
+            {
+                "look_number": 4,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A sunny and vibrant outfit featuring beige pants and shirt, accentuated by the cheerful yellow blazer, perfect for a contemporary style statement."
+            },
+            {
+                "look_number": 5,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Beige Tuxedo",
+                "reasoning": "A sleek and sophisticated monochromatic look, pairing beige pants and shirt, completed by the beige tuxedo for a polished and cohesive appearance."
+            },
+            {
+                "look_number": 6,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Dark Green Blazer",
+                "reasoning": "A versatile and stylish combination with beige pants and shirt, enhanced by the dark green blazer for a contemporary and refined appearance."
+            },
+            {
+                "look_number": 7,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Yellow Blazer",
+                "reasoning": "A playful and vibrant ensemble featuring beige pants and shirt, elevated by the lively yellow blazer for a confident and modern look."
+            },
+            {
+                "look_number": 8,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Pink Blazer",
+                "reasoning": "A balanced mix of neutrals and a pop of color, the beige pants and shirt complemented by the playful pink blazer for a stylish and contemporary appearance."
+            },
+            {
+                "look_number": 9,
+                "bottomwear": "Beige Pants",
+                "1st_layer": "Beige Shirt",
+                "sleeveless_blazer": "Sky Blue Blazer",
+                "reasoning": "A classic and refined combination with beige pants and shirt, elevated by the cool and modern touch of the sky blue blazer for a timeless look."
+            }
+            ]
+        }
+        
+        // Function to populate table rows
+        function populateTable(table, outfits) {
+            outfits.forEach(outfit => {
+                const row = table.insertRow();
+                row.insertCell(0).textContent = outfit.look_number;
+                row.insertCell(1).textContent = outfit.bottomwear;
+                row.insertCell(2).textContent = outfit["1st_layer"];
+                row.insertCell(3).textContent = outfit.sleeveless_blazer;
+            });
+        }
+        
+        // Variation 1
+        const womenTable1 = document.getElementById('womenTable1').getElementsByTagName('tbody')[0];
+        const menTable1 = document.getElementById('menTable1').getElementsByTagName('tbody')[0];
+        populateTable(womenTable1, outfitsData1.women_outfits);
+        populateTable(menTable1, outfitsData1.men_outfits);
+        
+        // Variation 2
+        const womenTable2 = document.getElementById('womenTable2').getElementsByTagName('tbody')[0];
+        populateTable(womenTable2, outfitsData2.women_outfits);
+        
+        // Variation 3
+        const womenTable3 = document.getElementById('womenTable3').getElementsByTagName('tbody')[0];
+        populateTable(womenTable3, outfitsData3.women_outfits);
+        
+        // Variation 4
+        const womenTable4 = document.getElementById('womenTable4').getElementsByTagName('tbody')[0];
+        populateTable(womenTable4, outfitsData4.women_outfits);
+        
+        // Variation 5
+        const womenTable5 = document.getElementById('womenTable5').getElementsByTagName('tbody')[0];
+        populateTable(womenTable5, outfitsData5.women_outfits);
+        
+        // Repeat the above structure for Variation 2, Variation 3, etc.
+    </script>
+    
+</body>
+</html>
